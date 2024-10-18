@@ -1,5 +1,5 @@
 *
-   {font-family: 'Roboto Condensed', sans-serif;}
+   {font-family: 'Roboto Condensed', sans-serif;}  /* Define a fonte padrão da página */
 
 :root 
    {--background-color: #f1f5f9; /* Cor de fundo padrão para a página */
@@ -19,7 +19,7 @@
   
 body 
    {background: var(--background-color); /* cor fundo */
-   color: var(--texto-default);  /* cor dos textos */}
+   color: var(--texto-default); /* cor dos textos */}
 
 a
    {text-decoration: none;
@@ -36,7 +36,7 @@ a
 .header .topbar 
    {background: var(--nav-bg-topbar);
    color: var(--nav-color2);
-   height: 40px;  /*altura*/}
+   height: 40px; /*altura*/}
 
 .header .branding 
    {min-height: 60px;
@@ -50,14 +50,15 @@ a
    margin-right: 8px;}
 
 .header .cta-btn, .header .cta-btn:focus 
-   {color: #0a0a0a;
-   background: #22c55e;
+   {color: #0a0a0a; /* Define a cor do texto */
+   background: #22c55e; /* Define a cor de fundo */
    font-size: 14px;
    padding: 8px 20px;
    margin: 0 5px 0 30px;
    border-radius: 4px;}
 
-/* Nav menu Desktop = Responsivo */
+/* Nav menu Desktop + Responsivo */
+
 @media (min-width:1200px) 
    {.navmenu 
    {padding: 0;}
@@ -119,14 +120,15 @@ a
     {font-size: 12px;}
 
   .navmenu .dropdown ul a:hover, .navmenu .dropdown ul .active:hover, .navmenu .dropdown ul li:hover > a 
-    {color: #22c55e;}
+    {color: #22c55e;} /* Define a cor do texto */
 
   .navmenu .dropdown:hover > ul 
     {opacity: 1;
     top: 100%;
     visibility: visible;}}
 
-/* Navmenu - Mobile */
+/* Navmenu Mobile */
+
 @media (max-width: 1199px) 
     {.mobile-nav-toggle 
     {color: var(--nav-color);
@@ -213,7 +215,7 @@ a
     {overflow: hidden;}
 
   .mobile-nav-active .mobile-nav-toggle 
-    {color: #f1f5f9;
+    {color: #f1f5f9; /* Define a cor do texto */
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -231,9 +233,10 @@ a
   .mobile-nav-active .navmenu>ul 
     {display: block;}}
 
-/* FIM Menu Mobile - MEDIA 1199px  */
+/* Fim do menu mobile - Media 1199px */
 
 /* ------ HERO -- Carousel --------- */
+
 .hero 
    {padding: 0;}
 
@@ -269,7 +272,7 @@ a
    text-align: center;
    padding-top: 30px;
    padding-bottom: 30px;
-   border-top: 4px solid #15803d;
+   border-top: 4px solid #4ade80; /* Cria uma borda superior de 4 pixels de largura */
    z-index: 3;
    margin-bottom: 50px;}
 
@@ -282,7 +285,7 @@ a
    {margin-bottom: 20px;
    font-size: 36px;
    font-weight: 700;
-   /* color: ; OPCIONAL */}
+   /* color: ; Opcional */}
 
 .hero .carousel-control-prev 
    {justify-content: start;}
@@ -291,9 +294,9 @@ a
    {justify-content: end;}
 
 .hero .carousel-control-next-icon, .hero .carousel-control-prev-icon 
-   {background: #15803d;
+   {background: #15803d;  /* Define a cor de fundo */
    font-size: 26px;
-   color: #f1f5f9;
+   color: #f1f5f9; /* Define a cor do texto */
    border-radius: 50px;
    transition: .3s;
    width: 54px;
@@ -304,7 +307,8 @@ a
 
 .hero .carousel-indicators 
    {cursor: pointer;
-   background: #f1f5f9;
+   background: #f1f5f9; /* Define a cor de fundo */
+   font-size: 26px;
    width: 12px;
    height: 12px;
    opacity: 1;
@@ -315,7 +319,7 @@ a
 
 .hero .carousel-indicators.active  
    {opacity: 1;
-   background: #f1f5f9;}
+   background: #f1f5f9;}  /* Define a cor de fundo */
 
 @media (max-height:500px), (max-width:500px)  
    {.hero .carousel 
@@ -326,7 +330,7 @@ a
 -------------------------------------*/
 
 .featured-services .service-item 
-   {background: #f1f5f9;
+   {background: #f1f5f9;  /* Define a cor de fundo */
    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
    padding: 50px 30px;
    transition: all 0.3s ease-in-out;
@@ -338,7 +342,7 @@ a
    {margin-bottom: 10px;}
 
 .featured-services .service-item .icon i 
-   {color: #22c55e;
+   {color: #22c55e;  /* Define a cor do texto */
    font-size: 36px;
    transition: ease-in-out 0.3s;}
 
@@ -348,8 +352,8 @@ a
    font-size: 20px;}
 
 .featured-services .service-item h4 a 
-   {color: #0a0a0a;}
-
+   {color: #0a0a0a;} /* Define a cor do texto */
+ 
 
 .featured-services .service-item p 
    {line-height: 24px;
@@ -357,17 +361,17 @@ a
    margin-bottom: 0;}
 
 .featured-services .service-item:hover h4 a, .featured-services .service-item:hover .icon i, .featured-services .service-item:hover p 
-   {color: #f1f5f9;}
+   {color: #f1f5f9;} /* Define a cor do texto */
 
 .featured-services .service-item:hover:before 
-   {background: #22c55e;
+   {background: #22c55e; /* Define a cor de fundo */
    inset: 0;
    border-radius: 0px;}
 
 .featured-services .service-item:before 
    {content: "";
    position: absolute;
-   background: #15803d;
+   background: #15803d; /* Define a cor de fundo */
    z-index: -1;
    inset: 100% 0 0 0 ;
    transition: all 0.5s;}
@@ -378,7 +382,7 @@ a
 
 section, .section 
    {/* color: ; */
-   background: #f1f5f9;
+   background: #f1f5f9; /* Define a cor de fundo */
    padding: 60px 0;}
 
 @media (max-width: 1199px) 
@@ -386,11 +390,11 @@ section, .section
    {scroll-margin-top: 100px;}}
 
 .accent-background 
-   {background: #22c55e;
-   color: #0a0a0a;;}
+   {background: #22c55e;  /* Define a cor de fundo */
+   color: #0a0a0a;;}  /* Define a cor do texto */
 
 /*--------------------------------
-# Global Section Titles - titulos
+# Global Section Titles - títulos
 ----------------------------------------*/
 
 .section-title 
@@ -411,7 +415,7 @@ section, .section
    display: block;
    width: 50px;
    height: 3px;
-   background: #22c55e;
+   background: #22c55e;  /* Define a cor de fundo */
    left: 0;
    right: 0;
    bottom: 0;
@@ -420,12 +424,13 @@ section, .section
 .section-title p 
    {margin-bottom: 0;}
 
-/* ---- About  ----- */
+/* ---- About ----- */
+
 .about .content h3 
    {font-size: 1.75rem;
    /* Multiplicar *16 ou Dividir /16 */
    font-weight: 700;
-   color: #16a34a;}
+   color: #16a34a;}  /* Define a cor do texto */
 
 .about .content ul 
    {list-style: none;
@@ -436,7 +441,7 @@ section, .section
    display: flex;}
 
 .about .content ul i 
-   {color: #16a34a;
+   {color: #16a34a;  /* Define a cor de fundo */
    margin-right: 0.5rem;
    line-height: 1.2;
    font-size: 1.25rem;}
@@ -469,7 +474,7 @@ section, .section
    animation-timing-function: steps;
    opacity: 1;
    border-radius: 50%;
-   border: 5px solid rgb(89, 215, 253);
+   border: 5px solid rgb(0, 0, 0);
    top: -15%;
    left: -15%;
    background: rgba(198, 16, 0, 0);}
@@ -484,7 +489,7 @@ section, .section
    height: 0;
    border-top: 10px solid transparent;
    border-bottom: 10px solid transparent;
-   border-left: 15px solid #f1f5f9;
+   border-left: 15px solid #f1f5f9; /* Cria uma borda à esquerda de 15 pixels de largura */
    z-index: 100;
    transition: all 400ms;}
 
@@ -499,7 +504,7 @@ section, .section
    border: none;
    border-top: 10px solid transparent;
    border-bottom: 10px solid transparent;
-   border-left: 15px solid #f1f5f9;
+   border-left: 15px solid #f1f5f9; /* Cria uma borda à esquerda de 15 pixels de largura */
    z-index: 200;
    animation: none;
    border-radius: 0;}
@@ -544,6 +549,7 @@ section, .section
    font-weight: 500;}
 
 /*  Scroll Top Button */
+
 .scroll-top 
    {position: fixed;
    visibility: hidden;
@@ -559,7 +565,7 @@ section, .section
 
 .scroll-top i 
    {font-size: 24px;
-   color: #f1f5f9;
+   color: #f1f5f9;  /* Define a cor do texto */
    line-height: 0;}
 
 .scroll-top.active 
@@ -567,12 +573,12 @@ section, .section
    opacity: 1;}
 
 .scroll-top:hover
-   {background: #f1f5f9;}
+   {background: #f1f5f9;}  /* Define a cor de fundo */
 
 .scroll-top:hover i
-   {color: #22c55e;}
+   {color: #22c55e;}  /* Define a cor do texto */
 
-/* Features // Caracteristicas  */
+/* Features / Caracteristicas  */
 
 .features .features-image 
    {position: relative;
@@ -586,3 +592,22 @@ section, .section
    height: 100%;
    object-fit: cover;
    z-index: 1;}
+
+.features h3 
+    {font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    /* color: ;  opcional */
+    /* font-family:  ;  opcional */}
+    
+.features h3:after 
+    {content: "";
+    background: #22c55e;  /* Define a cor de fundo */
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    left: 0;
+    bottom: 0;}
