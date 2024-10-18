@@ -604,7 +604,7 @@ section, .section
     
 .features h3:after 
     {content: "";
-    background: #22c55e;  /* Define a cor de fundo */
+    background: #22c55e; /* Define a cor de fundo */
     position: absolute;
     display: block;
     width: 50px;
@@ -704,3 +704,48 @@ section, .section
     
 .services .service-item:hover h3 
     {color: #22c55e;} /* Define a cor do texto */
+
+/* Consulta / Forms  */
+
+.consulta .email-form 
+    {width: 100%;}
+ 
+ .consulta .email-form .form-group 
+    {padding-bottom: 8px;}
+ 
+ .consulta .email-form input, .consulta .email-form textarea, .consulta .email-form select 
+    {color: #15803d; /* Define a cor do texto */
+    background: #f1f5f9; /* Define a cor de fundo */
+    /* border-color: ; */
+    /* border-radius: 0; */
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px !important;}
+ 
+ .consulta .email-form input::placeholder, .consulta .email-form textarea::placeholder, .consulta .email-form select::placeholder 
+    {color: color-mix(in srgb, #22c55e, transparent 50%);
+    /* color: red; */}
+ 
+/* Quando o Input for selecionado */
+
+ .consulta .email-form input:focus, .consulta .email-form textarea:focus, .consulta .email-form select:focus 
+    {border-color: #030712;} /* Define a cor da borda sólida */
+ 
+ .consulta .email-form input, .consulta .email-form select 
+    {height: 44px;}
+ 
+ .consulta .email-form textarea 
+    {padding: 10px 12px;}
+ 
+ .consulta .email-form button 
+    {background: #4ade80; /* Define a cor de fundo */
+    color: #f1f5f9; /* Define a cor do texto */
+    border: 0;
+    padding: 10px 35px;
+    font-size: 20px;
+    transition: 0.4s;
+    border-radius: 6px;}
+ 
+ .consulta .email-form button:hover 
+    {background: #22c55e; /* Define a cor de fundo */
+    /* color: ; */}
