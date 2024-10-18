@@ -3,9 +3,8 @@
 (function() 
    {"use strict";
   
-    /**
-     * Apply .scrolled class to the body as the page is scrolled down
-     */
+    /* Apply .scrolled class to the body as the page is scrolled down */
+
     function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -15,9 +14,8 @@
     document.addEventListener('scroll', toggleScrolled);
     window.addEventListener('load', toggleScrolled);
   
-    /**
-     * Mobile nav toggle
-     */
+    /* Mobile nav toggle */
+
     const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
   
     function mobileNavToogle() 
@@ -26,17 +24,15 @@
     mobileNavToggleBtn.classList.toggle('bi-x');}
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
   
-    /**
-     * Hide mobile nav on same-page/hash links
-     */
+    /* Hide mobile nav on same-page/hash links */
+
     document.querySelectorAll('#navmenu a').forEach(navmenu => 
     {navmenu.addEventListener('click', () => 
     {if (document.querySelector('.mobile-nav-active')) 
     {mobileNavToogle();}});});
   
-    /**
-     * Toggle mobile nav dropdowns
-     */
+    /* Toggle mobile nav dropdowns */
+
     document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => 
     {navmenu.addEventListener('click', function(e) 
     {e.preventDefault();
@@ -44,17 +40,15 @@
     this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
     e.stopImmediatePropagation();});});
   
-    /**
-     * Preloader
-     */
+    /* Preloader */
+
     const preloader = document.querySelector('#preloader');
     if (preloader) 
     {window.addEventListener('load', () => 
     {preloader.remove();});}
   
-    /**
-     * Scroll top button
-     */
+    /* Scroll top button */
+
     let scrollTop = document.querySelector('.scroll-top');
   
     function toggleScrollTop() {
@@ -69,9 +63,8 @@
     window.addEventListener('load', toggleScrollTop);
     document.addEventListener('scroll', toggleScrollTop);
   
-    /**
-     * Animation on scroll function and init
-     */
+    /* Animation on scroll function and init */
+
     function aosInit() 
     {AOS.init(
     {duration: 600,
@@ -80,29 +73,25 @@
     mirror: false});}
     window.addEventListener('load', aosInit);
   
-    /**
-     * Auto generate the carousel indicators
-     */
+    /* Auto generate the carousel indicators */
+
     document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => 
     {carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => 
     {if (index === 0) 
     {carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;} else 
     {carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}"></li>`;}});});
   
-    /**
-     * Initiate glightbox
-     */
+    /* Initiate glightbox */
+
     const glightbox = GLightbox(
     {selector: '.glightbox'});
   
-    /**
-     * Initiate Pure Counter
-     */
+    /* Initiate Pure Counter */
+
     new PureCounter();
   
-    /**
-     * Init swiper sliders
-     */
+    /* Init swiper sliders */
+
     function initSwiper() 
     {document.querySelectorAll(".init-swiper").forEach(function(swiperElement) 
     {let config = JSON.parse(swiperElement.querySelector(".swiper-config").innerHTML.trim());
@@ -112,16 +101,14 @@
   
     window.addEventListener("load", initSwiper);
   
-    /**
-     * Frequently Asked Questions Toggle
-     */
+    /* Frequently Asked Questions Toggle */
+
     document.querySelectorAll('.faq-item h3, .faq-item .faq-toggle').forEach((faqItem) => 
     {faqItem.addEventListener('click', () => 
     {faqItem.parentNode.classList.toggle('faq-active');});});
   
-    /**
-     * Correct scrolling position upon page load for URLs containing hash links.
-     */
+    /* Correct scrolling position upon page load for URLs containing hash links */
+
     window.addEventListener('load', function(e) 
     {if (window.location.hash) 
     {if (document.querySelector(window.location.hash)) 
@@ -131,9 +118,8 @@
     window.scrollTo(
     {top: section.offsetTop - parseInt(scrollMarginTop), behavior: 'smooth'});}, 100);}}});
   
-    /**
-     * Navmenu Scrollspy
-     */
+    /* Navmenu Scrollspy */
+    
     let navmenulinks = document.querySelectorAll('.navmenu a');
   
     function navmenuScrollspy() 
