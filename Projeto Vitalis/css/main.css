@@ -4,14 +4,14 @@
 :root 
    {--background-color: #f1f5f9; /* Cor de fundo padrão para a página */
     --nav-fundo: #22c55e; /* Cor de fundo da barra de navegação */
-    --texto-default: #0a0a0a; /* Cor padrão para o texto */
+    --texto-default: #030712; /* Cor padrão para o texto */
     --titulo-color: #4ade80; /* Cor dos títulos */
-    --nav-color: #0a0a0a;; /* Cor padrão dos links na navegação */
+    --nav-color: #030712; /* Cor padrão dos links na navegação */
     --nav-hover-color: #22c55e; /* Cor dos links na navegação quando estão com hover */
     --nav-mobile-background: #f1f5f9; /* Cor de fundo para a navegação em dispositivos móveis */
     --nav-dropdown-background: #f1f5f9; /* Cor de fundo para menus dropdown */
-    --nav-dropdown-color: #0a0a0a; /* Cor dos textos nos menus dropdown */
-    --nav-dropdown-hover-color: #0a0a0a; /* Cor dos textos nos menus dropdown quando estão com hover */
+    --nav-dropdown-color: #030712; /* Cor dos textos nos menus dropdown */
+    --nav-dropdown-hover-color: #030712; /* Cor dos textos nos menus dropdown quando estão com hover */
     --nav-bg-topbar: #15803d; /* Cor de fundo da barra superior da navegação */
     --nav-color2: #ebebeb; /* Segunda cor de texto para a navegação (pode ser usada em elementos específicos) */
     --surface: #f1f5f9; /* Cor de fundo para superfícies como cartões ou seções específicas */
@@ -30,7 +30,7 @@ a
 .header 
    {color: var(--texto-default);
    background: var(--background-color);
-   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+   box-shadow: 0px 5px 15px #030712; /* Aplica uma sombra suave de 15 pixels de espessura */
    z-index: 997; }
 
 .header .topbar 
@@ -50,7 +50,7 @@ a
    margin-right: 8px;}
 
 .header .cta-btn, .header .cta-btn:focus 
-   {color: #0a0a0a; /* Define a cor do texto */
+   {color: #030712; /* Define a cor do texto */
    background: #22c55e; /* Define a cor de fundo */
    font-size: 14px;
    padding: 8px 20px;
@@ -105,7 +105,7 @@ a
     opacity: 0;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0 0 30px #030712;} /* Aplica uma sombra suave de 30 pixels de espessura */
 
   .navmenu .dropdown ul li 
     {min-width: 200px;}
@@ -154,7 +154,7 @@ a
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);}
+    box-shadow: 0px 0px 30px #030712;} /* Aplica uma sombra suave de 30 pixels de espessura */
 
   .navmenu a, .navmenu a:focus 
     {color: var(--nav-dropdown-color);
@@ -205,11 +205,11 @@ a
     transition: all 0.5s ease-in-out;}
 
   .navmenu .dropdown ul ul 
-    {background-color: rgba(33, 37, 41, 0.1);}
+    {background-color: #030712;} /* Define a cor de fundo */
 
   .navmenu .dropdown>.dropdown-active 
     {display: block;
-    background-color: rgba(33, 37, 41, 0.03);}
+    background-color: #030712;} /* Define a cor de fundo */
 
   .mobile-nav-active 
     {overflow: hidden;}
@@ -227,7 +227,7 @@ a
     {position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: #030712; /* Define a cor de fundo */
     transition: 0.3s;}
 
   .mobile-nav-active .navmenu>ul 
@@ -277,8 +277,8 @@ a
    margin-bottom: 50px;}
 
 @media (max-width: 1200px) 
-   {.hero .container {
-    margin-left: 50px;
+   {.hero .container 
+   {margin-left: 50px;
     margin-right: 50px;}}
 
 .hero h2 
@@ -330,8 +330,8 @@ a
 -------------------------------------*/
 
 .featured-services .service-item 
-   {background: #f1f5f9;  /* Define a cor de fundo */
-   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+   {background: #f1f5f9; /* Define a cor de fundo */
+   box-shadow: 0 0 25px 0 #030712;
    padding: 50px 30px;
    transition: all 0.3s ease-in-out;
    height: 100%;
@@ -352,7 +352,7 @@ a
    font-size: 20px;}
 
 .featured-services .service-item h4 a 
-   {color: #0a0a0a;} /* Define a cor do texto */
+   {color: #030712;} /* Define a cor do texto */
  
 
 .featured-services .service-item p 
@@ -390,8 +390,8 @@ section, .section
    {scroll-margin-top: 100px;}}
 
 .accent-background 
-   {background: #22c55e;  /* Define a cor de fundo */
-   color: #0a0a0a;;}  /* Define a cor do texto */
+   {background: #22c55e; /* Define a cor de fundo */
+   color: #030712;} /* Define a cor do texto */
 
 /*--------------------------------
 # Global Section Titles - títulos
@@ -415,7 +415,7 @@ section, .section
    display: block;
    width: 50px;
    height: 3px;
-   background: #22c55e;  /* Define a cor de fundo */
+   background: #22c55e; /* Define a cor de fundo */
    left: 0;
    right: 0;
    bottom: 0;
@@ -430,7 +430,7 @@ section, .section
    {font-size: 1.75rem;
    /* Multiplicar *16 ou Dividir /16 */
    font-weight: 700;
-   color: #16a34a;}  /* Define a cor do texto */
+   color: #030712;} /* Define a cor do texto */
 
 .about .content ul 
    {list-style: none;
@@ -441,7 +441,7 @@ section, .section
    display: flex;}
 
 .about .content ul i 
-   {color: #16a34a;  /* Define a cor de fundo */
+   {color: #16a34a; /* Define a cor de fundo */
    margin-right: 0.5rem;
    line-height: 1.2;
    font-size: 1.25rem;}
@@ -474,10 +474,10 @@ section, .section
    animation-timing-function: steps;
    opacity: 1;
    border-radius: 50%;
-   border: 5px solid rgb(0, 0, 0);
+   border: 5px solid #030712; /* Define uma borda sólida de 5 pixels de espessura */
    top: -15%;
    left: -15%;
-   background: rgba(198, 16, 0, 0);}
+   background: #030712;} /* Define uma cor de fundo */
 
 .pulsating-play-btn:after 
    {content: "";
@@ -526,7 +526,7 @@ section, .section
 
 .stats .stats-item 
    {background-color: var(--background-color);
-   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 0 30px #030712; /* Aplica uma sombra */
    padding: 30px;}
 
 .stats .stats-item i 
@@ -565,7 +565,7 @@ section, .section
 
 .scroll-top i 
    {font-size: 24px;
-   color: #f1f5f9;  /* Define a cor do texto */
+   color: #f1f5f9; /* Define a cor do texto */
    line-height: 0;}
 
 .scroll-top.active 
@@ -573,12 +573,12 @@ section, .section
    opacity: 1;}
 
 .scroll-top:hover
-   {background: #f1f5f9;}  /* Define a cor de fundo */
+   {background: #f1f5f9;} /* Define a cor de fundo */
 
 .scroll-top:hover i
-   {color: #22c55e;}  /* Define a cor do texto */
+   {color: #22c55e;} /* Define a cor do texto */
 
-/* Features / Caracteristicas  */
+/* Features / Características  */
 
 .features .features-image 
    {position: relative;
@@ -611,3 +611,96 @@ section, .section
     height: 3px;
     left: 0;
     bottom: 0;}
+
+.features .icon-box 
+    {margin-top: 50px;}
+    
+.features .icon-box i 
+    {color: #f1f5f9; /* Define a cor do texto */
+    background: #22c55e; /* Define a cor de fundo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    font-size: 28px;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    line-height: 5;
+    box-shadow: 0px 2px 30px #d1d5db; /* Aplica uma sombra */
+    transition: 0.3s;}
+    
+.features .icon-box:hover i 
+    {background-color: #22c55e; /* Define a cor de fundo */
+    color: #030712;} /* Define a cor do texto */
+    
+.features .icon-box h4 
+    {font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;}
+    
+.features .icon-box h4 a 
+    {color: #22c55e; /* Define a cor do texto */
+    transition: 0.5s;}
+    
+.features .icon-box h4 a:hover 
+    {color: #030712;} /* Define a cor do texto */
+    
+.features .icon-box p 
+    {line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;}
+    
+/* # Services Section */
+    
+.services .service-item 
+    {text-align: center;
+    padding: 20px;
+    transition: all ease-in-out 0.3s;
+    height: 100%;}
+    
+.services .service-item .icon 
+    {background: #d1d5db; /* Define a cor de fundo */
+    color: #030712; /* Define a cor do texto */
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 0 25px ;}
+    
+.services .service-item h3 
+    {font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    transition: 0.3s;
+    position: relative;
+    color: #030712; /* Define a cor do texto */
+    /* font-family: ; */}
+    
+.services .service-item h3:after 
+    {content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #22c55e; /* Define a cor de fundo */
+    bottom: 0;
+    left: calc(50% - 25px);}
+    
+.services .service-item p 
+    {line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;}
+    
+.services .service-item:hover .icon 
+    {box-shadow: 0px 0 40px #22c55e;} /* Aplica uma sombra */
+    
+.services .service-item:hover h3 
+    {color: #22c55e;} /* Define a cor do texto */
